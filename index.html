@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email OTP Verification</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h2>Email OTP Verification</h2>
+
+    <label for="email">Enter Your Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <button onclick="sendOTP()">Send OTP</button><br><br>
+
+    <div id="otpSection" style="display: none;">
+        <label for="otp">Enter OTP:</label><br>
+        <input type="text" id="otp" required><br><br>
+        <button onclick="verifyOTP()">Verify OTP</button><br><br>
+        <p id="message"></p>
+    </div>
+
+</body>
+</html>
